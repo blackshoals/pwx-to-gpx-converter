@@ -10,7 +10,7 @@ from datetime import timedelta
 
 ############ User Configuration ################################################################################
 rootdir = "/home/ian/Timex/" #choose the folder where the .pwx files to be converted are located
-fd="Y" #enter "Y" or "N" to delete the files after converting                           
+fileclean="Y" #enter "Y" or "N" to delete the files after converting                           
 ################################################################################################################
 
 tz=time.altzone/(60*60)		#calculate the current timezone with Daylight Savings
@@ -112,5 +112,5 @@ for subdir, dirs, files in os.walk(rootdir):
 			out_gpx.close()
 
 			# if "Y", delete the original .pwx file
-			if fd=="Y":
+			if fileclean=="Y":
 				os.remove(sourcefile)
