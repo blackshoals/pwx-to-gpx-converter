@@ -27,7 +27,6 @@ for subdir, dirs, files in os.walk(rootdir):
 			time = frpwx.getElementsByTagName("time")[0] #break the time into components so that the .pwx time offsets can be added to it
 			stime=(time.firstChild.data)
 
-			
 			yyyy=int(stime[:4])
 			mo=int(stime[5:7])
 			dd=int(stime[8:10])
@@ -57,7 +56,6 @@ for subdir, dirs, files in os.walk(rootdir):
 			out_gpx.write("\t<trkseg>\n")
 
 			for i in frpwx.getElementsByTagName('sample'):
-				
 				
 				# gather the elements from the .pwx file
 				toff = i.getElementsByTagName("timeoffset")[0] 
