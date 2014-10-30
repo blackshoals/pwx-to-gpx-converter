@@ -9,8 +9,8 @@ from datetime import datetime
 from datetime import timedelta
 
 ############ User Configuration ################################################################################
-rootdir = "/home/ian/Timex/" #choose the folder where the .pwx files to be converted are located
-fileclean="Y" #enter "Y" or "N" to delete the files after converting                           
+rootdir = "/home/Timex/" #choose the folder where the .pwx files to be converted are located
+fileclean="N" #enter "Y" or "N" to delete the files after converting                           
 ################################################################################################################
 
 tz=time.altzone/(60*60)		#calculate the current timezone with Daylight Savings
