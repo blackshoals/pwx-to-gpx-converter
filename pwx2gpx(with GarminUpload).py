@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 # A Python script to convert .pwx files from the Timex Global Trainer watch to .gpx format to import into Garmin Connect, Strava, etc
 # V20141029 by blackshoals
 
